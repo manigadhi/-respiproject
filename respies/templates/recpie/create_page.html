@@ -1,0 +1,11 @@
+{% if errors %}
+{{errors}}
+{%endif%} 
+ <form action='/create_page/' method='post'>
+	{% csrf_token %}
+	Recipie Name<input type="text" name="recipie_name"><br>
+	Ingredients<input type="text" name="ingrediants"><br>
+	Process<input type="text" name="process"><br>
+	<input type="submit" value="Save">
+</form>
+<a href="/">Back</a>

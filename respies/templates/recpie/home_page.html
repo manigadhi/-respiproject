@@ -1,0 +1,6 @@
+{% if recipies %}
+	{% for each in recipies %}
+		<a href="/detail_page/{{each.id}}/"> {{each.recipie_name}}</a><br>
+	{% endfor %}
+{% endif %}
+<a href="/create_page/">Create Recipie</a>

@@ -1,0 +1,4 @@
+import sys
+fname=input("what is ur name:")
+lname=input("what is ur last name:")
+print("helo"+lname+" "+fname)
